@@ -1,5 +1,5 @@
-# imgur-gallery-controls
-Javascript for enhancing controls while browsing Imgur.com
+# Imgur Gallery Controls
+Adds keyboard shortcuts for jumping between images on Imgur.
 
 ## Controls
 4 - Previous post
