@@ -25,7 +25,7 @@ window.igc = window.imgurGalleryControls =
 
     // if this script already ran, tell the previous one to shut down
     if(window.imgurGalleryControls){
-        console.log("Stopping previous Imgur Gallery Controls");
+        console.log("Disabling previous Imgur Gallery Controls");
         window.imgurGalleryControls.stop();
     }
 
@@ -77,12 +77,12 @@ window.igc = window.imgurGalleryControls =
 
     function scroll(direction){
         var res = getIndexes();
-        // Note the indexes may not actually be valid. This is intended.
+        // Note the res may be undefined. This is intended.
         if(direction==UP){
             scrollTo(list[res.up]);
         }
         else{
-            scrollTo(list[res.down]);
+            scrollTo(list[res.down]-15);
         }
     }
 
